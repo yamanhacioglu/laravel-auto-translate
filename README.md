@@ -37,7 +37,7 @@ use NorthLab\AutoTranslate\Traits\HasAutoTranslations;
 ```
 ## For Laravel 11 
 ```php
-#[ObservedBy([UserObserver::class])]
+#[ObservedBy([TranslatableModelObserver::class])]
 class Post extends Model implements Translatable
 {
     use HasAutoTranslations;
