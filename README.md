@@ -19,15 +19,13 @@ composer require northlab/laravel-auto-translate
 php artisan vendor:publish --provider="NorthLab\AutoTranslate\AutoTranslateServiceProvider"
 ```
 
-2. Add your DeepL API key to your .env file:
-```env
-DEEPL_API_KEY=your-api-key
-```
-
-3. Run the migrations:
+2. Run the migrations 
 ```bash
 php artisan migrate
 ```
+
+3. Add your DeepL API key to your new model (Deepl):
+
 
 ## Usage
 
