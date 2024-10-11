@@ -1,9 +1,9 @@
 <?php
 
-namespace Northlab\AutoTranslate;
+namespace NorthLab\AutoTranslate;
 
 use Illuminate\Support\ServiceProvider;
-use Northlab\AutoTranslate\Services\TranslationService;
+use NorthLab\AutoTranslate\Services\TranslationService;
 
 class AutoTranslateServiceProvider extends ServiceProvider
 {
