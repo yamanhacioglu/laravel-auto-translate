@@ -54,16 +54,35 @@ class Post extends Model implements Translatable
         return $this->source_language;
     }
 
+}
+```
+## For Laravel 10 ...
+```php
+
+class Post extends Model implements Translatable
+{
+    use HasAutoTranslations;
+
+    protected array $translatable = ['title', 'content'];
+
+    protected string $sourceLanguage = 'Column containing source language'
+
+    public function getTranslatableAttributes(): array
+    {
+        return $this->translatable;
+    }
+
+    public function getSourceLanguageAttribute(): string
+    {
+        return $this->source_language;
+    }
 
     protected static function boot()
     {
-        // Manual trigger
-        Post::observe(TranslatableModelObserver::class);
+       Post::observe(TranslatableModelObserver::class);
     }
-
 }
 ```
-
 2. The translations will be automatically processed when the model is saved.
 
 3. Skip translation:
@@ -71,6 +90,9 @@ class Post extends Model implements Translatable
 ```php
 $post->withoutAutoTranslation()->save();
 ```
+4. Updates
+
+It will be constantly updated, taking into account its dependencies and features that can be added.
 
 ## License
 
