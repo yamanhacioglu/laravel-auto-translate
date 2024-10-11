@@ -1,0 +1,45 @@
+{
+    "name": "yamanhacioglu/laravel-auto-translate",
+    "description": "Automatic translation package for Laravel models using DeepL",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "C. Yaman HACIOĞLU",
+            "email": "yaman@northlab.com.tr"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^9|^10|^11",
+        "deeplcom/deepl-php": "^1.9",
+        "mcamara/laravel-localization": "^2.0",
+        "spatie/laravel-translatable": "^6.8",
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Northlab\\AutoTranslate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Northlab\\AutoTranslate\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Northlab\\AutoTranslate\\AutoTranslateServiceProvider"
+            ],
+            "aliases": {
+                "AutoTranslate": "Northlab\\AutoTranslate\\Facades\\AutoTranslate"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
