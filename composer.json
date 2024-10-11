@@ -27,16 +27,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Northlab\\AutoTranslate\\Tests\\": "tests/"
+            "NorthLab\\AutoTranslate\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Northlab\\AutoTranslate\\AutoTranslateServiceProvider"
+                "NorthLab\\AutoTranslate\\AutoTranslateServiceProvider"
             ],
             "aliases": {
-                "AutoTranslate": "Northlab\\AutoTranslate\\Facades\\AutoTranslate"
+                "AutoTranslate": "NorthLab\\AutoTranslate\\Facades\\AutoTranslate"
             }
         }
     },
