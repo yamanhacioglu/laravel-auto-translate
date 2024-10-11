@@ -1,9 +1,9 @@
 <?php
 
-namespace NorthLab\Observers;
+namespace NorthLab\AutoTranslate\Observers;
 
-use NorthLab\Jobs\TranslateModelJob;
-use NorthLab\Services\TranslationService;
+use NorthLab\AutoTranslate\Jobs\TranslateModelJob;
+use NorthLab\AutoTranslate\Services\TranslationService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 
