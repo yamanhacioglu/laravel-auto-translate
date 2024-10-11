@@ -1,8 +1,8 @@
 <?php
 
-namespace NorthLab\Services;
+namespace NorthLab\AutoTranslate\Services;
 
-use NorthLan\Models\Deepl.php
+use NorthLan\AutoTranslate\Models\Deepl.php
 use DeepL\Translator;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
