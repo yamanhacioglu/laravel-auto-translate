@@ -1,6 +1,6 @@
 <?
 
-namespace NorthLab\AutoTranslate\Contracts;
+namespace NorthLab\AutoTranslate\Models;
 
 
 class Deepl extends Model
