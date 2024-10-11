@@ -1,6 +1,10 @@
 # Laravel Auto Translate
 
-Automatic translation package for Laravel models using DeepL API. {{ THIS PACKAGE STILL IN TEST PROCESS. }}
+Automatic translation package for Laravel models using DeepL API. 
+
+```env
+{{ THIS PACKAGE STILL IN TEST PROCESS. }}
+```
 
 ## Installation
 
