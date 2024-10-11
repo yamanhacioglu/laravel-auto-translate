@@ -1,6 +1,6 @@
 <?php
 
-namespace Northlab\AutoTranslate\Contracts;
+namespace NorthLab\AutoTranslate\Contracts;
 
 interface Translatable
 {
